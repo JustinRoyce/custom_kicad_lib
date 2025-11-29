@@ -1,0 +1,258 @@
+(footprint "ZTP-148SRC1"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.25 4.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f278556f-251a-4166-a810-60dc5593aad5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ZTP-148SRC1"
+		(at 0.25 5.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "234ad982-1fa1-436f-acab-e4e149b36566")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "42d652a9-792d-4a37-9294-17279c37e070")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "08c90d09-9553-4750-8d1a-293a5f3f0cbb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3.75 -0.5)
+		(end -2.8 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ee9e6d18-6d80-4c33-94ee-2284ebe20ae1")
+	)
+	(fp_line
+		(start -3.75 0.5)
+		(end -3.75 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0e052b0c-89a3-4582-aa83-ea671d46520c")
+	)
+	(fp_line
+		(start -2.8 0.5)
+		(end -3.75 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "02c27f4c-04a9-4d0b-a7f5-64e77a642c94")
+	)
+	(fp_arc
+		(start -2.8 -0.5)
+		(mid 2.844293 0)
+		(end -2.8 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4fbe2986-9ead-4d0b-bdf6-4499703d2243")
+	)
+	(fp_circle
+		(center 0 0)
+		(end -2.85 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "4d0a7325-3724-4015-a90d-a9b09f647cea")
+	)
+	(fp_line
+		(start -3 -0.5)
+		(end -3 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "ae0cec0b-a9eb-4cd3-bb0a-1c679ff889e0")
+	)
+	(fp_line
+		(start -3 -0.5)
+		(end -2.653299 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "58bbe2e5-3777-4da1-be74-96002af4c151")
+	)
+	(fp_line
+		(start -2.7 0.5)
+		(end -3 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "04ca80e6-24af-4f81-93c4-6db42355647e")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.27 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "26746cd5-550e-4a93-9e38-9a603ac0a2c4")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.7 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "dbe6c20e-9ec4-48c9-8c9e-4d0ade11f990")
+	)
+	(fp_line
+		(start -3.75 -0.5)
+		(end -3.75 0.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "7b027a9a-e3d5-4c01-b0bc-c64c7f2b6e91")
+	)
+	(fp_line
+		(start -3.75 0.5)
+		(end -2.648634 0.507182)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8a3e6c21-a92c-445b-88ca-a79719f6a975")
+	)
+	(fp_line
+		(start -2.649999 -0.5)
+		(end -3.75 -0.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "15c1c979-6ee6-4cf4-8577-5ab74ab618c8")
+	)
+	(fp_arc
+		(start -2.65 -0.5)
+		(mid 2.696755 -0.003657)
+		(end -2.648634 0.507185)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "bb9f6f15-83b9-4223-bf85-ae47cba82a31")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.25 7.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3554056a-ca8e-4ec7-b474-b6953fbe887f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -0.898 -0.898)
+		(size 1.2 1.2)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6863ab78-616f-45d6-af6c-eef6f1ed8227")
+	)
+	(pad "2" thru_hole circle
+		(at -0.898 0.898)
+		(size 1.2 1.2)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0fd79c50-f630-4472-bf20-e545eaf3053a")
+	)
+	(pad "3" thru_hole circle
+		(at 0.898 0.898)
+		(size 1.2 1.2)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bea727df-96d7-491c-9d49-6c1dcdc0caae")
+	)
+	(pad "4" thru_hole circle
+		(at 0.898 -0.898)
+		(size 1.2 1.2)
+		(drill 0.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "abc6453c-24b2-4491-b735-b445740f32be")
+	)
+	(embedded_fonts no)
+	(model "${CUSTOM_MCAD}/Amphenol_FCI.3dshapes/ZTP-148SRC1.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -180)
+		)
+	)
+)

@@ -1,0 +1,8 @@
+(module H3LIS100DL (layer F.Cu) (tedit 5B2D45E7)
+  (fp_text reference REF** (at 2.54 -11.43) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value H3LIS100DL (at 1.27 -15.24) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)

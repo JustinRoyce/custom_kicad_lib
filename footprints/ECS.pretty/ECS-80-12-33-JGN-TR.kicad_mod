@@ -1,0 +1,154 @@
+(footprint "ECS-80-12-33-JGN-TR"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "ECX-32 SMD CRYSTAL 3.2 x 2.5 x 0.8 mm ceramic package")
+	(property "Reference" "REF**"
+		(at 0.55 2.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "31c16fab-9c6c-4c99-a1dc-84a7161316ad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "ECS-80-12-33-JGN-TR"
+		(at 0.55 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "88486879-d3ad-4512-bd75-61cdf94a763b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04a8b627-a29f-4fd1-bfef-d8038c36768a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "402ec318-0239-458f-a02e-0a0d1f1a0a89")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2 -1.65)
+		(end 2 1.65)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "f7b9659d-ef0c-4320-8664-e9f91bf75992")
+	)
+	(fp_circle
+		(center -2.35 -1)
+		(end -2.15 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "dad448b4-f57a-424e-a35c-5802858df937")
+	)
+	(fp_rect
+		(start -1.95 -1.6)
+		(end 1.95 1.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "ba94c837-1f0f-4b97-b47a-d058bd8bca91")
+	)
+	(fp_rect
+		(start -1.6 -1.25)
+		(end 1.6 1.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e59bb03a-7ed4-481c-b502-1baeeb77b161")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.55 5.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "dc8add9c-109f-49e2-8348-93e7c6b45f15")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.15 0.9)
+		(size 1.3 1.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "156edcc5-df99-4da2-9006-765e58926145")
+	)
+	(pad "2" smd rect
+		(at 1.15 0.9)
+		(size 1.3 1.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "1faf107f-6f5d-414b-bb8f-c7fbbb331b34")
+	)
+	(pad "3" smd rect
+		(at 1.15 -0.9)
+		(size 1.3 1.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "5d9ce0d9-d6aa-4b63-9a0d-c6186cb7e01b")
+	)
+	(pad "4" smd rect
+		(at -1.15 -0.9)
+		(size 1.3 1.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "03bc2ca5-c1f3-4e4e-a43d-1783585ade2d")
+	)
+	(embedded_fonts no)
+	(model "${CUSTOM_MCAD}/ECS.3dshapes/ECS-80-12-33-JGN-TR.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

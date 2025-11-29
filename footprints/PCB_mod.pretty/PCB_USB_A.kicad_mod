@@ -1,0 +1,174 @@
+(footprint "PCB_USB_A"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "USB A connector made from PCB layout")
+	(property "Reference" "REF**"
+		(at 0.381 8.89 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "915ef862-3571-403a-9c78-139d6c0ca13d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "PCB_USB_A"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "38985c47-435f-4781-a9ff-34799eebc11e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1d670552-ac0a-420f-a46c-41d45e57c85d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "USB A connector made from PCB layout"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9f12d2a9-4830-45c9-af11-a9a9fd281d97")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -5.1 -7)
+		(end 4.85 6.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e26cb128-e052-49ac-a620-692e15b8b61b")
+	)
+	(fp_circle
+		(center -3.81 7.112)
+		(end -4.445 7.112)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "79f3919a-0d21-496c-be69-36460baaa0f9")
+	)
+	(fp_line
+		(start -6.096 -7.239)
+		(end 5.969 -7.239)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "9c7e2422-0c76-4101-bfc2-d6811859d028")
+	)
+	(fp_line
+		(start -6.096 6.096)
+		(end -6.096 -7.239)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "3286e54c-e6d1-4a40-bc55-f6aa4524ccde")
+	)
+	(fp_line
+		(start 5.969 -7.239)
+		(end 5.969 6.096)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "00200f28-3c2f-40ca-a730-9bf4fd0f9479")
+	)
+	(fp_rect
+		(start -5.8 -7)
+		(end 5.8 6.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "ba2424e0-0c3e-4af2-9ef3-6ea4f9ec40f4")
+	)
+	(fp_rect
+		(start -5.8 -7)
+		(end 5.8 6.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "99a7732a-b195-4e97-b7a1-984dce448469")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.127 11.54 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0a3c91d8-cace-4b81-ad6c-93220402a488")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3.81 -0.3175)
+		(size 1.27 12.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "598f81bf-91ff-4660-b5d1-cb9c6805d8d9")
+	)
+	(pad "2" smd roundrect
+		(at -1.0795 0)
+		(size 1.27 12.065)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "5ba17259-49c7-495b-9648-7e26914dde89")
+	)
+	(pad "3" smd roundrect
+		(at 1.0795 0)
+		(size 1.27 12.065)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "a3bdc4a4-35bc-4446-b617-b71b148d1c3f")
+	)
+	(pad "4" smd roundrect
+		(at 3.81 -0.3175)
+		(size 1.27 12.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "512a6ffc-1d49-4f8e-8f21-fcc00cb7e95e")
+	)
+	(embedded_fonts no)
+)

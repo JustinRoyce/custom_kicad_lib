@@ -1,0 +1,17 @@
+(footprint "MountingHole_3mm" (version 20221018) (generator pcbnew)
+  locked (layer "F.Cu")
+  (descr "Mounting hole, Befestigungsbohrung, 3mm, No Annular, Kein Restring,")
+  (tags "Mounting hole, Befestigungsbohrung, 3mm, No Annular, Kein Restring,")
+  (attr through_hole)
+  (fp_text reference "REF**" (at 0 -4.0005) (layer "F.SilkS") hide
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
+    (tstamp 6a28f0bb-b4d1-4ff0-bb1d-96ef9451c3cf)
+  )
+  (fp_text value "MountingHole_3mm" (at 1.00076 5.00126) (layer "F.Fab") hide
+      (effects (font (size 0.5 0.5) (thickness 0.125)))
+    (tstamp 0156bd41-8798-460a-bb5b-7a49fb471d0e)
+  )
+  (fp_circle (center 0 0) (end 2.99974 0)
+    (stroke (width 0.381) (type solid)) (fill none) (layer "Cmts.User") (tstamp 8c57e992-72ad-4749-b7e5-307fc4c7b1e6))
+  (pad "" thru_hole circle locked (at 0 0) (size 2.99974 2.99974) (drill 2.99974) (layers) (tstamp 9128ff7b-b358-480b-a796-7b175e81debb))
+)
