@@ -1,0 +1,3 @@
+[submodule "inkscape_kicad/svg2shenzhen"]
+	path = inkscape_kicad/svg2shenzhen
+	url = https://github.com/badgeek/svg2shenzhen.git
