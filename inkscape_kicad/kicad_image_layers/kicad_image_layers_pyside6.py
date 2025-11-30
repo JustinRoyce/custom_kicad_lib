@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'kicad_image_layers.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.7.0
+## Created by: Qt User Interface Compiler version 6.9.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -17,13 +17,13 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QComboBox, QHBoxLayout, QLabel,
     QLineEdit, QMainWindow, QMenuBar, QPushButton,
-    QSizePolicy, QStatusBar, QWidget)
+    QSizePolicy, QStatusBar, QTextEdit, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1041, 366)
+        MainWindow.resize(1041, 649)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.layoutWidget = QWidget(self.centralwidget)
@@ -90,15 +90,20 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.LE_Layer3_Color)
 
-        self.CB_Layer3_Color = QComboBox(self.layoutWidget_2)
-        self.CB_Layer3_Color.setObjectName(u"CB_Layer3_Color")
+        self.CB_Layer3_Color_1 = QComboBox(self.layoutWidget_2)
+        self.CB_Layer3_Color_1.setObjectName(u"CB_Layer3_Color_1")
 
-        self.horizontalLayout_6.addWidget(self.CB_Layer3_Color)
+        self.horizontalLayout_6.addWidget(self.CB_Layer3_Color_1)
+
+        self.CB_Layer3_Color_2 = QComboBox(self.layoutWidget_2)
+        self.CB_Layer3_Color_2.setObjectName(u"CB_Layer3_Color_2")
+
+        self.horizontalLayout_6.addWidget(self.CB_Layer3_Color_2)
 
         self.PB_Layer3_Color = QPushButton(self.layoutWidget_2)
         self.PB_Layer3_Color.setObjectName(u"PB_Layer3_Color")
         icon = QIcon()
-        icon.addFile(u"../98191da8/color-picker.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"../98191da8/color-picker.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.PB_Layer3_Color.setIcon(icon)
 
         self.horizontalLayout_6.addWidget(self.PB_Layer3_Color)
@@ -119,10 +124,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.LE_Layer1_Color)
 
-        self.CB_Layer1_Color = QComboBox(self.layoutWidget3)
-        self.CB_Layer1_Color.setObjectName(u"CB_Layer1_Color")
+        self.CB_Layer1_Color_1 = QComboBox(self.layoutWidget3)
+        self.CB_Layer1_Color_1.setObjectName(u"CB_Layer1_Color_1")
 
-        self.horizontalLayout_4.addWidget(self.CB_Layer1_Color)
+        self.horizontalLayout_4.addWidget(self.CB_Layer1_Color_1)
+
+        self.CB_Layer1_Color_2 = QComboBox(self.layoutWidget3)
+        self.CB_Layer1_Color_2.setObjectName(u"CB_Layer1_Color_2")
+
+        self.horizontalLayout_4.addWidget(self.CB_Layer1_Color_2)
 
         self.PB_Layer1_Color = QPushButton(self.layoutWidget3)
         self.PB_Layer1_Color.setObjectName(u"PB_Layer1_Color")
@@ -146,10 +156,15 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.LE_Layer2_Color)
 
-        self.CB_Layer2_Color = QComboBox(self.layoutWidget4)
-        self.CB_Layer2_Color.setObjectName(u"CB_Layer2_Color")
+        self.CB_Layer2_Color_1 = QComboBox(self.layoutWidget4)
+        self.CB_Layer2_Color_1.setObjectName(u"CB_Layer2_Color_1")
 
-        self.horizontalLayout_5.addWidget(self.CB_Layer2_Color)
+        self.horizontalLayout_5.addWidget(self.CB_Layer2_Color_1)
+
+        self.CB_Layer2_Color_2 = QComboBox(self.layoutWidget4)
+        self.CB_Layer2_Color_2.setObjectName(u"CB_Layer2_Color_2")
+
+        self.horizontalLayout_5.addWidget(self.CB_Layer2_Color_2)
 
         self.PB_Layer2_Color = QPushButton(self.layoutWidget4)
         self.PB_Layer2_Color.setObjectName(u"PB_Layer2_Color")
@@ -173,6 +188,9 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_7.addWidget(self.LE_PNG_Path)
 
+        self.TE_Notes = QTextEdit(self.centralwidget)
+        self.TE_Notes.setObjectName(u"TE_Notes")
+        self.TE_Notes.setGeometry(QRect(630, 320, 371, 221))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -199,5 +217,27 @@ class Ui_MainWindow(object):
         self.LB_Layer2_Color.setText(QCoreApplication.translate("MainWindow", u"LAYER 2 COLOR:", None))
         self.PB_Layer2_Color.setText("")
         self.PB_PNG_Path.setText(QCoreApplication.translate("MainWindow", u"PNG PATH:", None))
+        self.TE_Notes.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">NOTE:</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Layer 1: Silkscreen + None</span><"
+                        "/p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- silkscreen usually corresponds to white </p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- use lightest color</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Layer 2: Copper + Mask</span> </p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- creates metalic color on PCB</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- use mid color</p>\n"
+"<p style=\"-qt-paragraph-type:empty"
+                        "; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Layer 3:  User.Drawings + None</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- no etching of PCB, usually corresponds to green color</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- use darkest color</p></body></html>", None))
     # retranslateUi
 

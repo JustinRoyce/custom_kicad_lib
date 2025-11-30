@@ -73,6 +73,7 @@ class KiCadImageLayerGUI(QMainWindow):
         hex_color_value = self.color_2_hex_value(color_value)
         print("Layer 1 Color RGB Value:", hex_color_value)
         self.ui.LE_Layer1_Color.setText(hex_color_value)
+        self.ui.LE_Layer1_Color.setReadOnly(True)
         
         return None
     

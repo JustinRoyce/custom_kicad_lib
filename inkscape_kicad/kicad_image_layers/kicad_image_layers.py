@@ -9,9 +9,18 @@ PCB_LAYER_B_MASK = "B.Mask"
 PCB_LAYER_F_SILKSCREEN = "F.Silkscreen"
 PCB_LAYER_B_SILKSCREEN = "B.Silkscreen"
 PCB_LAYER_EDGE_CUTS = "Edge.Cuts"
-PCB_USER_DRAWINGS_LAYER = "User.Drawings"
+PCB_USER_DRAWINGS = "User.Drawings"
 PCB_USER_NONE = "None"
 
+PCB_LAYER_F_CU_PREFIX = "F-CU"
+PCB_LAYER_B_CU_PREFIX = "B-CU"
+PCB_LAYER_F_MASK_PREFIX = "F-MASK"
+PCB_LAYER_B_MASK_PREFIX = "B-MASK"
+PCB_LAYER_F_SILKSCREEN_PREFIX = "F-SILK"
+PCB_LAYER_B_SILKSCREEN_PREFIX = "B-SILK"
+PCB_LAYER_EDGE_CUTS_PREFIX = "EDGE-CUTS"
+PCB_USER_DRAWINGS_PREFIX = "U-DRAWINGS"
+PCB_USER_NONE_PREFIX = "NONE"
 
 PCB_LAYER_LIST:str = [ 
     PCB_LAYER_F_CU,
@@ -21,9 +30,22 @@ PCB_LAYER_LIST:str = [
     PCB_LAYER_F_SILKSCREEN,
     PCB_LAYER_B_SILKSCREEN,
     PCB_LAYER_EDGE_CUTS,
-    PCB_USER_DRAWINGS_LAYER,
+    PCB_USER_DRAWINGS,
     PCB_USER_NONE
 ]
+
+PCB_LAYER_DICT:str = {
+    PCB_LAYER_F_CU: PCB_LAYER_F_CU_PREFIX,
+    PCB_LAYER_B_CU: PCB_LAYER_B_CU_PREFIX,
+    PCB_LAYER_F_MASK: PCB_LAYER_F_MASK_PREFIX,
+    PCB_LAYER_B_MASK: PCB_LAYER_B_MASK_PREFIX,
+    PCB_LAYER_F_SILKSCREEN: PCB_LAYER_F_SILKSCREEN_PREFIX,
+    PCB_LAYER_B_SILKSCREEN: PCB_LAYER_B_SILKSCREEN_PREFIX,
+    PCB_LAYER_EDGE_CUTS: PCB_LAYER_EDGE_CUTS_PREFIX,
+    PCB_USER_DRAWINGS: PCB_USER_DRAWINGS_PREFIX,
+    PCB_USER_NONE: PCB_USER_NONE_PREFIX
+} 
+
 
 NOTES = """<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
 <html><head><meta name="qrichtext" content="1" /><meta charset="utf-8" /><style type="text/css">
@@ -85,7 +107,7 @@ class KiCadImageLayers:
         return PCB_LAYER_EDGE_CUTS
     
     def get_PCB_layer_User_Drawings(self)-> str:
-        return PCB_USER_DRAWINGS_LAYER
+        return PCB_USER_DRAWINGS
     
     def get_PCB_layer_None(self)-> str:
         return PCB_USER_NONE
@@ -119,17 +141,103 @@ class KiCadImageLayers:
         
         return int(magnitude)
     
-    def get_all_colors_from_image(self) -> list[tuple[int,int,int,int]]:
-        pass
+    def get_all_colors_from_image(self) -> "ImageInfo":
+        img_path = self.png_path
+        img_info_obj = ImageInfo()
+       
+        try:
+            img = Image.open(img_path)
+            img = img.convert("RGB")
+            unique_colors_set = set(img.getdata())
+            img_width, img_height = img.size
+            num_of_colors = len(unique_colors_set)
+            img_info_obj.set_file_path(img_path)
+            img_info_obj.set_img_width(img_width)
+            img_info_obj.set_img_height(img_height)
+            img_info_obj.set_num_of_colors(num_of_colors)
 
+            for x in range(img_width):
+                for y in range(img_height):
+                    pixel_color = img.getpixel((x, y))
+
+                    hex_color_value = img_info_obj.color_2_hex_value(pixel_color)
+
+                    if hex_color_value in img_info_obj.color_dict:
+                        img_info_obj.color_dict[hex_color_value] += 1
+                    else:
+                        img_info_obj.color_dict[hex_color_value] = 1    
+
+        except FileNotFoundError:
+            print(f"Error: Image file not found at {img_path}")
+            return -1
+        except Exception as e:
+            print(f"An error occurred: {e}")
+            return -1
+        
+        return img_info_obj
+
+    def color_2_hex_value(self, color_value: tuple[int,int,int]) -> str:
+        r = color_value[0]
+        g = color_value[1]
+        b = color_value[2]
+        hex_value = "#{:02x}{:02x}{:02x}".format(r, g, b)
+        return hex_value
 
     def auto_extract_colors_from_images(self):
         if self.png_path is None:
             print("PNG path is not set.")
             return None
         
-        image = Image.open(self.png_path).convert("RGBA")
+        image = Image.open(self.png_path).convert("RGB")
         pixels = image.getdata()
 
 
         return None
+    
+class ImageInfo:
+    def __init__(self):
+        self.file_path:str = None
+        self.img_width:int = None   
+        self.img_height:int = None
+        self.num_of_colors:int = None
+        self.color_dict:dict[str] = {}
+
+    
+    def set_file_path(self, file_path:str):
+        self.file_path = file_path
+
+    def set_img_width(self, img_width:int):
+        self.img_width = img_width
+    
+    def set_img_height(self, img_height:int):
+        self.img_height = img_height
+    
+    def set_num_of_colors(self, num_of_colors:int):
+        self.num_of_colors = num_of_colors  
+    
+    def set_colors_dict(self, color_tuple: tuple[int,int,int], count:int):
+
+        color_hex_value = self.color_2_hex_value(color_tuple)
+        self.color_dict[color_hex_value] = count
+
+    def get_file_path(self)-> str:
+        return self.file_path  
+
+    def get_img_width(self)-> int:
+        return self.img_width
+    
+    def get_img_height(self)-> int:
+        return self.img_height
+    
+    def get_num_of_colors(self)-> int:
+        return self.num_of_colors
+    
+    def get_colors_dict(self)-> dict[str]:
+        return self.colors_dict  
+    
+def print_image_info(image_info: ImageInfo):
+    print(f"Image File Path: {image_info.get_file_path()}")
+    print(f"Image Width: {image_info.get_img_width()} pixels")
+    print(f"Image Height: {image_info.get_img_height()} pixels")
+    print(f"Number of Unique Colors: {image_info.get_num_of_colors()}")
+  
