@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'kicad_image_layers.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.9.2
+## Created by: Qt User Interface Compiler version 6.7.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -15,9 +15,10 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QHBoxLayout, QLabel,
-    QLineEdit, QMainWindow, QMenuBar, QPushButton,
-    QSizePolicy, QStatusBar, QTextEdit, QWidget)
+from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGraphicsView,
+    QHBoxLayout, QLabel, QLineEdit, QMainWindow,
+    QMenuBar, QPushButton, QSizePolicy, QStatusBar,
+    QTextEdit, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -76,7 +77,7 @@ class Ui_MainWindow(object):
 
         self.layoutWidget_2 = QWidget(self.centralwidget)
         self.layoutWidget_2.setObjectName(u"layoutWidget_2")
-        self.layoutWidget_2.setGeometry(QRect(280, 140, 431, 26))
+        self.layoutWidget_2.setGeometry(QRect(60, 140, 501, 26))
         self.horizontalLayout_6 = QHBoxLayout(self.layoutWidget_2)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)
@@ -89,6 +90,12 @@ class Ui_MainWindow(object):
         self.LE_Layer3_Color.setObjectName(u"LE_Layer3_Color")
 
         self.horizontalLayout_6.addWidget(self.LE_Layer3_Color)
+
+        self.LB_Layer3_Color_Viewer = QLabel(self.layoutWidget_2)
+        self.LB_Layer3_Color_Viewer.setObjectName(u"LB_Layer3_Color_Viewer")
+        self.LB_Layer3_Color_Viewer.setFrameShape(QFrame.Shape.Box)
+
+        self.horizontalLayout_6.addWidget(self.LB_Layer3_Color_Viewer)
 
         self.CB_Layer3_Color_1 = QComboBox(self.layoutWidget_2)
         self.CB_Layer3_Color_1.setObjectName(u"CB_Layer3_Color_1")
@@ -103,14 +110,14 @@ class Ui_MainWindow(object):
         self.PB_Layer3_Color = QPushButton(self.layoutWidget_2)
         self.PB_Layer3_Color.setObjectName(u"PB_Layer3_Color")
         icon = QIcon()
-        icon.addFile(u"../98191da8/color-picker.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon.addFile(u"../98191da8/color-picker.png", QSize(), QIcon.Normal, QIcon.Off)
         self.PB_Layer3_Color.setIcon(icon)
 
         self.horizontalLayout_6.addWidget(self.PB_Layer3_Color)
 
         self.layoutWidget3 = QWidget(self.centralwidget)
         self.layoutWidget3.setObjectName(u"layoutWidget3")
-        self.layoutWidget3.setGeometry(QRect(280, 80, 431, 26))
+        self.layoutWidget3.setGeometry(QRect(60, 80, 501, 26))
         self.horizontalLayout_4 = QHBoxLayout(self.layoutWidget3)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -123,6 +130,12 @@ class Ui_MainWindow(object):
         self.LE_Layer1_Color.setObjectName(u"LE_Layer1_Color")
 
         self.horizontalLayout_4.addWidget(self.LE_Layer1_Color)
+
+        self.LB_Layer1_Color_Viewer = QLabel(self.layoutWidget3)
+        self.LB_Layer1_Color_Viewer.setObjectName(u"LB_Layer1_Color_Viewer")
+        self.LB_Layer1_Color_Viewer.setFrameShape(QFrame.Shape.Box)
+
+        self.horizontalLayout_4.addWidget(self.LB_Layer1_Color_Viewer)
 
         self.CB_Layer1_Color_1 = QComboBox(self.layoutWidget3)
         self.CB_Layer1_Color_1.setObjectName(u"CB_Layer1_Color_1")
@@ -142,7 +155,7 @@ class Ui_MainWindow(object):
 
         self.layoutWidget4 = QWidget(self.centralwidget)
         self.layoutWidget4.setObjectName(u"layoutWidget4")
-        self.layoutWidget4.setGeometry(QRect(280, 110, 431, 26))
+        self.layoutWidget4.setGeometry(QRect(60, 110, 501, 26))
         self.horizontalLayout_5 = QHBoxLayout(self.layoutWidget4)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -155,6 +168,12 @@ class Ui_MainWindow(object):
         self.LE_Layer2_Color.setObjectName(u"LE_Layer2_Color")
 
         self.horizontalLayout_5.addWidget(self.LE_Layer2_Color)
+
+        self.LB_Layer2_Color_Viewer = QLabel(self.layoutWidget4)
+        self.LB_Layer2_Color_Viewer.setObjectName(u"LB_Layer2_Color_Viewer")
+        self.LB_Layer2_Color_Viewer.setFrameShape(QFrame.Shape.Box)
+
+        self.horizontalLayout_5.addWidget(self.LB_Layer2_Color_Viewer)
 
         self.CB_Layer2_Color_1 = QComboBox(self.layoutWidget4)
         self.CB_Layer2_Color_1.setObjectName(u"CB_Layer2_Color_1")
@@ -174,7 +193,7 @@ class Ui_MainWindow(object):
 
         self.layoutWidget5 = QWidget(self.centralwidget)
         self.layoutWidget5.setObjectName(u"layoutWidget5")
-        self.layoutWidget5.setGeometry(QRect(70, 30, 931, 25))
+        self.layoutWidget5.setGeometry(QRect(60, 30, 941, 25))
         self.horizontalLayout_7 = QHBoxLayout(self.layoutWidget5)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
@@ -190,7 +209,19 @@ class Ui_MainWindow(object):
 
         self.TE_Notes = QTextEdit(self.centralwidget)
         self.TE_Notes.setObjectName(u"TE_Notes")
-        self.TE_Notes.setGeometry(QRect(630, 320, 371, 221))
+        self.TE_Notes.setGeometry(QRect(360, 330, 371, 221))
+        self.PB_Auto_Generator = QPushButton(self.centralwidget)
+        self.PB_Auto_Generator.setObjectName(u"PB_Auto_Generator")
+        self.PB_Auto_Generator.setGeometry(QRect(600, 80, 171, 81))
+        self.PB_Layer_Creator = QPushButton(self.centralwidget)
+        self.PB_Layer_Creator.setObjectName(u"PB_Layer_Creator")
+        self.PB_Layer_Creator.setGeometry(QRect(800, 80, 171, 81))
+        self.GV_KiCAD = QGraphicsView(self.centralwidget)
+        self.GV_KiCAD.setObjectName(u"GV_KiCAD")
+        self.GV_KiCAD.setGeometry(QRect(70, 350, 256, 192))
+        self.GV_Inkscape = QGraphicsView(self.centralwidget)
+        self.GV_Inkscape.setObjectName(u"GV_Inkscape")
+        self.GV_Inkscape.setGeometry(QRect(760, 350, 256, 192))
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
@@ -211,10 +242,13 @@ class Ui_MainWindow(object):
         self.PB_Layer2_Path.setText(QCoreApplication.translate("MainWindow", u"LAYER 2 PATH:", None))
         self.PB_Layer3_Path.setText(QCoreApplication.translate("MainWindow", u"LAYER 3 PATH:", None))
         self.LB_Layer3_Color.setText(QCoreApplication.translate("MainWindow", u"LAYER 3 COLOR:", None))
+        self.LB_Layer3_Color_Viewer.setText("")
         self.PB_Layer3_Color.setText("")
         self.LB_Layer1_Color.setText(QCoreApplication.translate("MainWindow", u"LAYER 1 COLOR:", None))
+        self.LB_Layer1_Color_Viewer.setText("")
         self.PB_Layer1_Color.setText("")
         self.LB_Layer2_Color.setText(QCoreApplication.translate("MainWindow", u"LAYER 2 COLOR:", None))
+        self.LB_Layer2_Color_Viewer.setText("")
         self.PB_Layer2_Color.setText("")
         self.PB_PNG_Path.setText(QCoreApplication.translate("MainWindow", u"PNG PATH:", None))
         self.TE_Notes.setHtml(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
@@ -239,5 +273,7 @@ class Ui_MainWindow(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:700;\">Layer 3:  User.Drawings + None</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- no etching of PCB, usually corresponds to green color</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">- use darkest color</p></body></html>", None))
+        self.PB_Auto_Generator.setText(QCoreApplication.translate("MainWindow", u"AUTO GENERATE", None))
+        self.PB_Layer_Creator.setText(QCoreApplication.translate("MainWindow", u"CREATE IMAGE LAYERS", None))
     # retranslateUi
 

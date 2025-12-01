@@ -183,16 +183,8 @@ class KiCadImageLayers:
         hex_value = "#{:02x}{:02x}{:02x}".format(r, g, b)
         return hex_value
 
-    def auto_extract_colors_from_images(self):
-        if self.png_path is None:
-            print("PNG path is not set.")
-            return None
-        
-        image = Image.open(self.png_path).convert("RGB")
-        pixels = image.getdata()
 
 
-        return None
     
 class ImageInfo:
     def __init__(self):
@@ -201,7 +193,6 @@ class ImageInfo:
         self.img_height:int = None
         self.num_of_colors:int = None
         self.color_dict:dict[str] = {}
-
     
     def set_file_path(self, file_path:str):
         self.file_path = file_path
@@ -235,9 +226,9 @@ class ImageInfo:
     def get_colors_dict(self)-> dict[str]:
         return self.colors_dict  
     
-def print_image_info(image_info: ImageInfo):
-    print(f"Image File Path: {image_info.get_file_path()}")
-    print(f"Image Width: {image_info.get_img_width()} pixels")
-    print(f"Image Height: {image_info.get_img_height()} pixels")
-    print(f"Number of Unique Colors: {image_info.get_num_of_colors()}")
+    def print_image_info(self):
+        print(f"Image File Path: {self.get_file_path()}")
+        print(f"Image Width: {self.get_img_width()} pixels")
+        print(f"Image Height: {self.get_img_height()} pixels")
+        print(f"Number of Unique Colors: {self.get_num_of_colors()}")
   

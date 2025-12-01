@@ -83,9 +83,9 @@
    <widget class="QWidget" name="layoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>60</x>
       <y>140</y>
-      <width>431</width>
+      <width>501</width>
       <height>26</height>
      </rect>
     </property>
@@ -99,6 +99,16 @@
      </item>
      <item>
       <widget class="QLineEdit" name="LE_Layer3_Color"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="LB_Layer3_Color_Viewer">
+       <property name="frameShape">
+        <enum>QFrame::Shape::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QComboBox" name="CB_Layer3_Color_1"/>
@@ -122,9 +132,9 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>60</x>
       <y>80</y>
-      <width>431</width>
+      <width>501</width>
       <height>26</height>
      </rect>
     </property>
@@ -138,6 +148,16 @@
      </item>
      <item>
       <widget class="QLineEdit" name="LE_Layer1_Color"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="LB_Layer1_Color_Viewer">
+       <property name="frameShape">
+        <enum>QFrame::Shape::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QComboBox" name="CB_Layer1_Color_1"/>
@@ -161,9 +181,9 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>60</x>
       <y>110</y>
-      <width>431</width>
+      <width>501</width>
       <height>26</height>
      </rect>
     </property>
@@ -177,6 +197,16 @@
      </item>
      <item>
       <widget class="QLineEdit" name="LE_Layer2_Color"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="LB_Layer2_Color_Viewer">
+       <property name="frameShape">
+        <enum>QFrame::Shape::Box</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QComboBox" name="CB_Layer2_Color_1"/>
@@ -200,9 +230,9 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>60</x>
       <y>30</y>
-      <width>931</width>
+      <width>941</width>
       <height>25</height>
      </rect>
     </property>
@@ -222,8 +252,8 @@
    <widget class="QTextEdit" name="TE_Notes">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>320</y>
+      <x>360</x>
+      <y>330</y>
       <width>371</width>
       <height>221</height>
      </rect>
@@ -249,6 +279,52 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Layer 3:  User.Drawings + None&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- no etching of PCB, usually corresponds to green color&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;- use darkest color&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB_Auto_Generator">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>80</y>
+      <width>171</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AUTO GENERATE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PB_Layer_Creator">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>80</y>
+      <width>171</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CREATE IMAGE LAYERS</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="GV_KiCAD">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>350</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="GV_Inkscape">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>350</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
     </property>
    </widget>
   </widget>
