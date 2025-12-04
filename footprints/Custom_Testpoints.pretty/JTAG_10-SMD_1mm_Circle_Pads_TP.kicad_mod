@@ -1,0 +1,153 @@
+(footprint "JTAG_10-SMD_1mm_Circle_Pads_TP"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "JTAG 10 SMD 1mm Circle Pads Test Points for P75-B1 Pogo Pins")
+	(property "Reference" "REF**"
+		(at 0 7.62 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "29a4c788-6046-4722-a682-c4c537014607")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "JTAG_10-SMD_1mm_Circle_Pads_TP"
+		(at 0.635 -0.23 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "be8aa993-efef-4466-a85c-1b5ca33bfeaa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1ebbcd6e-f7d4-4015-a4a9-789be096110f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a410eb7d-9199-4979-aeac-ca75764c6948")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -2.54 -6.35)
+		(end 2.54 6.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "62633716-1242-4ad2-a7c0-99b32adc0128")
+	)
+	(fp_rect
+		(start -2.54 -6.35)
+		(end 2.54 6.35)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5177b3d4-91e4-47ca-a680-bbc6e63d6ce7")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.635 1.27 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "11890d8c-bc00-4700-a6c8-945f69db8a87")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.27 -5.08)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "26efcf03-a6fe-4989-9353-e044f84545c5")
+	)
+	(pad "2" smd circle
+		(at 1.27 -5.08)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "29ffccbd-6883-4b42-a87d-e45a91a9cb93")
+	)
+	(pad "3" smd circle
+		(at -1.27 -2.54)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1a76e0fd-5b91-4a82-8268-97c141c57870")
+	)
+	(pad "4" smd circle
+		(at 1.27 -2.54)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bd8f2c98-d532-42e4-bd2b-9a907c8af1f6")
+	)
+	(pad "5" smd circle
+		(at -1.27 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "458bb1fa-5f7c-45d3-aea1-731e90903e7d")
+	)
+	(pad "6" smd circle
+		(at 1.27 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8074be1a-3290-4d66-affd-a0e11f9d7884")
+	)
+	(pad "7" smd circle
+		(at -1.27 2.54)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "63b89f3e-2b54-46cf-86a8-416b6da50cc5")
+	)
+	(pad "8" smd circle
+		(at 1.27 2.54)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "40805f6b-9d60-4dfc-90a2-85bae03cec75")
+	)
+	(pad "9" smd circle
+		(at -1.27 5.08)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c2407156-8ec4-40a0-a57b-635e20446417")
+	)
+	(pad "10" smd circle
+		(at 1.27 5.08)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "71ad939a-3fe3-47d9-b58a-4957267109db")
+	)
+	(embedded_fonts no)
+)

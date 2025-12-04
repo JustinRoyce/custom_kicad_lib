@@ -1,0 +1,305 @@
+(footprint "JTAG_10-P75-B1"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "JTAG 10  P75-B1 Pogo Pins Connection")
+	(property "Reference" "REF**"
+		(at 0 8.255 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6f3fc8a6-1548-4d8a-8cde-9f965408b08d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "JTAG_10-P75-B1"
+		(at 1.27 -1.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d88e9dba-5055-4271-a754-8c95ea07de84")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7cfeb6c9-2d41-4c32-8f11-0f4c65edf5e1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d15bea68-723d-4224-b64f-a6ab2ac23168")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -3.175 -6.985)
+		(end 3.175 6.985)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "71434c0e-3254-46fd-8972-6fc90eaa11b7")
+	)
+	(fp_rect
+		(start -3.175 -6.985)
+		(end 3.175 6.985)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "85ba58b7-7155-4454-a39d-287f220ca044")
+	)
+	(fp_rect
+		(start -3.175 -6.985)
+		(end 3.175 6.985)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "4b356cf5-928d-4aee-9ca7-d93384474c8d")
+	)
+	(fp_rect
+		(start -3.175 -6.985)
+		(end 3.175 6.985)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8ccd5568-bf14-4e0a-b399-36f550212ba2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.27 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "72205847-7e29-4358-9a42-ef395e76983c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 1.27 -5.08)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cb840109-04b4-433d-8fc3-9cfdf2f5510d")
+	)
+	(pad "2" thru_hole circle
+		(at -1.27 -5.08)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a6bbfdac-ccaf-4792-bfdf-eb3c6c59949f")
+	)
+	(pad "3" thru_hole circle
+		(at 1.27 -2.54)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5d1789e7-96d0-4b33-843f-c02bd654f477")
+	)
+	(pad "4" thru_hole circle
+		(at -1.27 -2.54)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1218a084-cd76-4aef-92db-150b58d22f7a")
+	)
+	(pad "5" thru_hole circle
+		(at 1.27 0)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "39a3eb6e-9add-42c3-b943-83e4355015f6")
+	)
+	(pad "6" thru_hole circle
+		(at -1.27 0)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "095a5cbe-d081-4836-88eb-7499196baa29")
+	)
+	(pad "7" thru_hole circle
+		(at 1.27 2.54)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dcfb9aa9-1a9e-4e76-9702-ab9ae2b736d3")
+	)
+	(pad "8" thru_hole circle
+		(at -1.27 2.54)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "18e81b02-4a79-4b3c-8c0b-88859bd768ad")
+	)
+	(pad "9" thru_hole circle
+		(at 1.27 5.08)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "122e182c-7cf3-4f31-8670-beea6492d509")
+	)
+	(pad "10" thru_hole circle
+		(at -1.27 5.08)
+		(size 2.2 2.2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6d4c4663-a04f-4d2e-82a3-f6ad464aa1df")
+	)
+	(embedded_fonts no)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz -1.27 5.08 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz 1.27 5.08 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz -1.27 2.54 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz 1.27 2.54 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz -1.27 0 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz 1.27 0 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz -1.27 -2.54 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz 1.27 -2.54 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz -1.27 -5.08 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+	(model "${CUSTOM_MCAD}/Custom_Testpoints.3dshapes/P75-B1.step"
+		(offset
+			(xyz 1.27 -5.08 10.16)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
